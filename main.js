@@ -10,11 +10,11 @@ console.log("");
 let a = 3, b = 4, c = 5;
 let p = (a + b + c) / 2;
 let s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
-if ((a + b > c) && (a + c > b) && (b + c > a)) {
-    { console.log("Треугольник существует") }
-    { console.log(`Периметр = ${p * 2}`) }
-    { console.log(`Площадь = ${s}`) }
-    { console.log(`Соотношение = ${(p * 2) / s}`) }
+if ((a + b > c) && (a + c > b) && (b + c > a)) 
+    { console.log("Треугольник существует") 
+    console.log(`Периметр = ${p * 2}`) 
+    console.log(`Площадь = ${s}`) 
+    console.log(`Соотношение = ${(p * 2) / s}`) 
 }
 else { console.log("Треугольника не существует") }
 
@@ -58,7 +58,7 @@ console.log("");
 let chislo = 10, l = 1;
 while (l) {
     number = prompt("Угадайте число")
-    if (number == undefined || number == 0 || number == ' ' || number == Infinity || number == NaN) {
+    if (number == 0 || number == Infinity || isNaN(number) == NaN) {
         console.log("Введите число!");
     }
     else {
