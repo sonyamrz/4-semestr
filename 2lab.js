@@ -70,7 +70,7 @@ function randomNumber(num1, num2) {
 function SampleArray() {
     let a = +prompt('Введите, сколько цифр будет в массиве')
 
-    let b = randomNumber(0, 10)
+    let b = randomNumber(0, 15)
     const massarray = []
     for (let i = 0; i < a; i++){
         massarray.push(Math.floor(Math.random() * 9) + 1)
