@@ -80,7 +80,7 @@ function SampleArray() {
         let rand = (Math.floor(Math.random() * massarray.length))
         massarray2.push(massarray[rand])
     }
-    console.log(`([${massarray}], ${a}) -> [${massarray2}]`)
+    console.log(`([${massarray}], ${b}) -> [${massarray2}]`)
     return `[${massarray2}]`
 }
 
