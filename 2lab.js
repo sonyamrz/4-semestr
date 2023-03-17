@@ -1,7 +1,7 @@
 //Первая задача
 function convertSpeed(speed, convert) {
     if (speed < 0) {
-        console.log("Error!")
+        return "Error!"
     }
     else {
         let newSpeed
@@ -16,7 +16,7 @@ function convertSpeed(speed, convert) {
             return newSpeed
         }
         else {
-            console.log("Error!")
+            
             return "Error!"
         }
     }
@@ -36,7 +36,7 @@ function absValue(number) {
         return number;
     }
     else {
-        console.log("Error!")
+        
         return "Error!"
     }
 }
@@ -65,22 +65,16 @@ function randomNumber(num1, num2) {
         return random;
     }
 }
-
 //Пятая задача
-function SampleArray() {
-    let a = +prompt('Введите, сколько цифр будет в массиве')
-
-    let b = randomNumber(0, 15)
-    const massarray = []
-    for (let i = 0; i < a; i++){
-        massarray.push(Math.floor(Math.random() * 9) + 1)
-    }
-    const massarray2 = []
-    for (let y = 0; y < b; y++){
-        let rand = (Math.floor(Math.random() * massarray.length))
-        massarray2.push(massarray[rand])
-    }
-    console.log(`([${massarray}], ${b}) -> [${massarray2}]`)
-    return `[${massarray2}]`
+const arr=[1,2,3,4,5,6]
+function sampleArray(arr, a) {
+ let b= randomNumber(0,10);
+ const massarray = [];
+ for (let i =0; i<b; i++) {
+    let rand = (Math.floor(Math.random() * massarray.length))
+    massarray.push(arr[rand])
+ 
+ }
+ console.log(`([${arr}], ${b}) -> [${massarray}]`)
+ 
 }
-
