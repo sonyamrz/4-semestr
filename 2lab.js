@@ -61,23 +61,21 @@ function randomNumber(num1, num2) {
     }
     else {
         let random = Math.floor(Math.random() * num2) + num1;
-       console.log(`(${num1}, ${num2}) -> ${random}`)
         return random;
     }  
- 
 }
-
+ // console.log(`(${num1}, ${num2}) -> ${random}`)
 //Пятая задача
 const arr=[1,2,3,4,5,6] 
 
 function sampleArray(arr, b) {
- b= randomNumber(0,10);
  const massarray = [];
  for (let i =0; i<b; i++) {
-    let rand = (Math.floor(Math.random() * massarray.length))
+    let rand = randomNumber(0, arr.length-1)
     massarray.push(arr[rand])
  
  }
- console.log(`([${arr}], ${b}) -> [${massarray}]`)
- 
+console.log(`([${arr}], ${b}) -> [${massarray}]`)
+return massarray;
 }
+
